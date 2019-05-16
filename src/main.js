@@ -3,13 +3,18 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import Mint from 'mint-ui';
+import 'mint-ui/lib/style.min.css'
+import VueWechatTitle from 'vue-wechat-title'; 
+Vue.use(VueWechatTitle);
+Vue.use(Mint);
 Vue.config.productionTip = false
-
+console.log(Vue)
 /* eslint-disable no-new */
-new Vue({
+export default new Vue({
   el: '#app',
   router,
   components: { App },
   template: '<App/>'
 })
+// export default Vue
